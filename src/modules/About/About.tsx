@@ -14,7 +14,6 @@ const About: React.FC = () => {
               >
                 Hello I'am
                 <strong className="font-extrabold text-5xl">
-                  {" "}
                   Adithya Baliga
                 </strong>
                 <div />

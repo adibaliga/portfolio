@@ -1,5 +1,4 @@
-import NavLink from "./NavLink";
-import { NavLinkProps } from "./NavLink";
+import NavLink, { NavLinkProps } from "./NavLink";
 
 export interface NavLinksProps {
   links: NavLinkProps[];

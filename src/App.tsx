@@ -1,5 +1,3 @@
-import "./App.css";
-
 import About from "./modules/About";
 import AboutMe from "./modules/AboutMe";
 import Contact from "./modules/Contact";

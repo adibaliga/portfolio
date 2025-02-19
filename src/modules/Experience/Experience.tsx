@@ -2,6 +2,7 @@ import ExperienceCard from "./ExperienceCard";
 
 const experiences = [
   {
+    id: 1,
     title: "Lead Software Engineer",
     company: "Google",
     dateRange: "Nov 2019 - Present",
@@ -9,6 +10,7 @@ const experiences = [
       "As a Senior Software Engineer at Google, I played a pivotal role in developing innovative solutions for Google's core search algorithms. Collaborating with a dynamic team of engineers, I contributed to the enhancement of search accuracy and efficiency, optimizing user experiences for millions of users worldwide.",
   },
   {
+    id: 2,
     title: "Lead Software Engineer",
     company: "Google",
     dateRange: "Jan 2017 - Oct 2019",
@@ -16,6 +18,7 @@ const experiences = [
       "At Youtube, I served as a Software Engineer, focusing on the design and implementation of backend systems for the social media giant's dynamic platform. Working on projects that involved large-scale data processing and user engagement features, I leveraged my expertise to ensure seamless functionality and scalability.",
   },
   {
+    id: 3,
     title: "Lead Software Engineer",
     company: "Google",
     dateRange: "Jan 2016 - Dec 2017",
@@ -32,15 +35,15 @@ const Experience: React.FC = () => {
           My <span className="font-extrabold">Experience</span>
         </h2>
         <div className="space-y-12 my-24 mx-16">
-          {experiences.map((exp, index) => (
+          {experiences.map(({ id, title, company, dateRange, description }) => (
             <ExperienceCard
-              key={index}
-              title={exp.title}
-              company={exp.company}
-              dateRange={exp.dateRange}
-              description={exp.description}
+              key={id}
+              title={title}
+              company={company}
+              dateRange={dateRange}
+              description={description}
               className={
-                index % 2 === 0
+                id % 2 === 0
                   ? "bg-primary-black border-zinc-500 border"
                   : "bg-zinc-800"
               }
