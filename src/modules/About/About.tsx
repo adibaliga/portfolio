@@ -13,8 +13,8 @@ const About: React.FC = () => {
                 style={{ lineHeight: "1.5" }}
               >
                 Hello I'am
-                <strong className="font-extrabold text-5xl">
-                  Adithya Baliga
+                <strong className="font-extrabold text-5xl">{/*
+                   */}Adithya Baliga
                 </strong>
                 <div />
                 <strong className="font-extrabold text-5xl">Frontend </strong>
