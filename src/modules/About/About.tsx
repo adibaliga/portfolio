@@ -12,19 +12,20 @@ const About: React.FC = () => {
                 className="text-5xl font-normal mb-4"
                 style={{ lineHeight: "1.5" }}
               >
-                Hello I'am
-                <strong className="font-extrabold text-5xl">{/*
-                   */}Adithya Baliga
+                Hello I'm{" "}
+                <strong className="font-extrabold text-5xl">
+                  Adithya Baliga
                 </strong>
-                <div />
+                <br />
                 <strong className="font-extrabold text-5xl">Frontend </strong>
                 <strong className="font-extrabold text-5xl text-stroke">
                   Developer
                 </strong>
-                <div />
+                <br />
                 Based In{" "}
                 <strong className="font-extrabold text-5xl">India.</strong>
               </h2>
+
               <p
                 className="font-normal text-base mb-4 text-zinc-500"
                 style={{ lineHeight: "1.5" }}
